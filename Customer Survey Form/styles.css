@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:bisque;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    max-width: 1200px;
+    margin:20px;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000(0, 0, 0, 0.1);
+    background-color: white;
+    color:fuchsia;
+    
+}
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container select,
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="checkbox"] {
+    width: calc(60% - 20px); 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 2px solid blueviolet;
+}
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container select,
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+    font-size: 16px;
+}
+.checkbox-group {
+    display: flex;
+    margin-bottom: 15px; 
+    
+}
+
+.form-container button {
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 15px; 
+    border: 2px solid ;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
