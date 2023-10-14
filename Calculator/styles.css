@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color:bisque;
+}
+
+.buttons .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    width: 70px;
+    height: 60px;
+    font-size: 27px;
+    cursor: pointer;
+    border-color: black;
+}
+
+.buttons .operator {
+    background-color:cyan;
+    border-color: black;
+}
+
+.buttons .operator1 {
+ background-color:bisque;
+ border-color: black;
+}
