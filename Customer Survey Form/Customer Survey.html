@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="surveyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="korea">Korea</option>
+            <option value="japan">Japan</option>
+            <option value="canada">Canada</option>
+                
+            </select><br>
+            
+            <label>Gender:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="male"> 
+                <label for="male">Male</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="female"> 
+                <label for="female">Female</label>
+            </div>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required><br>
+            <center>
+            <button type="button" onclick="validateForm()">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button></center>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popupResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
